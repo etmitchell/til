@@ -5,7 +5,7 @@ So when you define a new service to monitor and you're using NRPE (Nagios Remote
 NOTE: Also you need to change `dont_blame_nrpe=0` to `dont_blame_nrpe=1` on the Nagios server in /etc/nagios/nrpe.cfg
 
 Supplied with apt-get install nagios-nrpe
-    #this command runs a program $ARG1$ with arguments $ARG2$
+
     define command {
             command_name    check_nrpe
             command_line    /usr/lib/nagios/plugins/check_nrpe -H $HOSTADDRESS$ -c $ARG1$ -a $ARG2$
